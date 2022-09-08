@@ -1,0 +1,89 @@
+.depliant{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+/* fermer */
+.depliantFermer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #FF6060 ;
+    border-radius: 15px;
+}
+
+.depliantFermer p {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.depliantFermer img {
+    width: 25px;
+    height: 35px;
+    margin-right: 20px;
+    background-color: #FF6060;
+    border: 0;
+    transform: rotate(90deg);
+}
+
+/*Ouvert*/
+
+.depliantOuvert{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #FF6060 ;
+    border-radius: 15px;
+}
+
+.depliantOuvert p {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.depliantOuvert img {
+    width: 25px;
+    height: 35px;
+    margin-right: 15px;
+    background-color: #FF6060;
+    border: 0;
+    transform: rotate(270deg);
+}
+
+/* contenu description */
+.contenuDepliant{
+    width: 100%;
+    height: fit-content;
+    background-color: #F6F6F6;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.contenuDepliant p {
+    color: #FF6060;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* liste */
+
+.contenuDepliant ul{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.contenuDepliant ul li{
+    font-size: 20px;
+    margin-top: 10px;
+}

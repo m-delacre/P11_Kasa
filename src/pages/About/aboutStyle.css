@@ -1,0 +1,28 @@
+.aboutGlobale{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutGlobale--Banner{
+    display: flex;
+    width: auto;
+    height: auto;
+    height: fit-content;
+}
+
+.aboutGlobale--Depliants{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: fit-content;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.aboutGlobale--Depliants--items{
+    margin-bottom: 30px;
+}
