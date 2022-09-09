@@ -9,8 +9,8 @@
     width: auto;
     height: 100%;
     background-color: grey;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
     border-radius: 20px;
     position: relative;
 }
@@ -22,10 +22,19 @@
     border-radius: 20px;
 }
 
-.textBanner{
+.textBannerPos{
     position: absolute;
-    top: 10px;
-    left: 35%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.textBanner{
     color: white;
-    font-size: 50px;
+    font-size: 40px;
+    filter: drop-shadow(0 0 0.1rem black);
 }

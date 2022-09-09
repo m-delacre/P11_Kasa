@@ -10,8 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .containerLogo{
@@ -39,4 +39,12 @@
     font-size: 30px;
     text-decoration: none;
     font-weight: 500;
+}
+
+.pagesLink--active{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 3px;
+    border-bottom: 3px solid #FF6060;
 }

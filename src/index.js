@@ -2,26 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import RouteManager from './components/RouteManager';
 import Footer from './components/Footer';
-import { createGlobalStyle } from 'styled-components';
-
-const GlobaleStyle = createGlobalStyle`
-  *{
-    font-family: 'Montserrat', sans-serif;
-    color: #FF6060;
-    font-weight: 400;
-  }
-
-  body{
-    margin: 0;
-    padding: 0;
-    croll-behavior: smooth;
-  }
-`
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobaleStyle/>
     <RouteManager/>
     <Footer/>
   </React.StrictMode>

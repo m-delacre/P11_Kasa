@@ -5,6 +5,7 @@ import Depliant from "../../components/Depliant";
 import './logementStyle.css'
 import Rating from "../../components/Rating";
 import TagList from "../../components/TagList";
+import Carrousel from "../../components/Carrousel";
 
 function Logement() {
     const {indexLogement} = useParams();
@@ -19,9 +20,10 @@ function Logement() {
     return (
         <div className="logementGlobale">
             <div className="logementGlobalePos">
-                <div className="waitCarou">
-                    {/* component caroussel */}
-                </div>
+                <Carrousel 
+                    picture = {logement.pictures}
+                    nombrePhotos = {logement.pictures.length}
+                />
                 <div className="logementInfo">
                     <div className="logementInfo--left">
                         <p className="logement--textBold">{logement.title}</p>

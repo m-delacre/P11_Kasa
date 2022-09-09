@@ -6,7 +6,9 @@ function Banner(props) {
         <div className="containerBanner">
           <div className="bannerContour">
             <img  className="bannerDeco" src={props.img} alt="illustration"/>
-            {props.text ? <p className="textBanner">{props.text}</p>:<p></p>}
+            <div className="textBannerPos">
+              {props.text ? <p className="textBanner">{props.text}</p>:<p></p>}
+            </div>
           </div>
         </div>
     );
