@@ -5,10 +5,12 @@ import About from '../../pages/About/index.jsx'
 import Error from '../Error/index.jsx'
 import Header from '../Header/index.jsx';
 import Logement from '../../pages/Logement/index.jsx';
+import ScrollToTop from '../ScrollTop/index.jsx';
 
 function RouteManager(){
     return(
     <Router>
+      <ScrollToTop/>
       <Header/>
         <Routes>
           {/*Page d'acceuil*/}
