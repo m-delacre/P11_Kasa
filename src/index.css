@@ -9,3 +9,17 @@ body{
     padding: 0;
     scroll-behavior: smooth;
 }
+
+@media only screen and (max-device-width : 900px){
+    *{
+        font-family: 'Montserrat', sans-serif;
+        color: #FF6060;
+        font-weight: 400;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+}

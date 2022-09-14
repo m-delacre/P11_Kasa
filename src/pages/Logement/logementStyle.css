@@ -11,83 +11,214 @@
     margin-right: 200px;
 }
 
-/* infos */
-
-.logementInfo{
+.logement{
     width: 100%;
-    height: fit-content;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
-.logementInfo--left{
-    width: fit-content;
-    height: 100%;
+/* left titre localisation tags */
+
+.logement-Left{
+    width: 50%;
+    height: 150px;
     display: flex;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
 }
 
-.logementInfo--right{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.logement--textBold{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
-.logementInfo--right--name{
-    width: fit-content;
-    height: fit-content;
+.logement-left-text{
     display: flex;
     flex-direction: column;
+}
+
+.logement-left-text p{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.logement-left-tag{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+}
+
+/* right nom prenom photo rating */
+
+.logement-Right{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 30px;
-    margin-top: -20px;
+    flex-direction: column;
 }
 
-.logementInfo--right--name p{
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: -10px;
+.logement-rightinfo{
+    display: flex;
+    justify-content: flex-end;
 }
 
-.logementInfo--right--img{
-    width: 100px;
-    height: 100px;
+.logement-right--name{
+    font-size: 20px;
+    margin-right: 10px;
 }
 
-.logementInfo--right--img img{
+.logement-right--name p{
+    margin-bottom: 15px;
+}
+
+.logement-right--img{
+    width: 90px;
+    height: 90px;
+}
+
+.logement-right--img img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover;
 }
 
-
-.logement--textBold{
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 0;
-}
-
-/* tag & rating */
-.tagETrating{
-    width: 100%;
+.rating{
+    width: fit-content;
     height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0px;
+    margin-top: 15px;
 }
 
-/* logement */
+/* logement dépliant*/
 .logement--Depliants{
     width: 100%;
     display: flex;
     gap: 10%;
     margin-bottom: 50px;
+}
+
+@media only screen and (max-width : 900px){
+    .logementGlobale{
+        width: 100%;
+        min-height: 90vh;
+        margin-top: 10px;
+    }
+    
+    .logementGlobalePos{
+        width: auto;
+        min-height: 100vh;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .logement{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    /* left titre localisation tags */
+    
+    .logement-Left{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    
+    .logement--textBold{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    
+    .logement-left-text{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logement-left-text p{
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    
+    .logement-left-tag{
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        margin-top: 5px;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    /* right nom prenom photo rating */
+    
+    .logement-Right{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+    
+    .logement-rightinfo{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .logement-right--name{
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: -10px;
+    }
+    
+    .logement-right--name p{
+        margin-bottom: -10px;
+    }
+    
+    .logement-right--img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logement-right--img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+    .rating{
+        width: 50%;
+        height: fit-content;
+    }
+    
+    /* logement dépliant*/
+    .logement--Depliants{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
 }

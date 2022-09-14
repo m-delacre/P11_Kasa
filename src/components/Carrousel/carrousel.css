@@ -70,3 +70,78 @@
     font-size: 25px;
     filter: drop-shadow(0 0 0.1rem black);
 }
+
+@media only screen and (max-width : 900px){
+    .carrouselGlobal{
+        width: 100%;
+        height: 255px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-radius: 15px;
+    }
+    
+    /* image de fond */
+    .carrousel--Img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    
+    .carrousel--Img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* flêche de gauche */
+    
+    .carrousel--arrowLeft{
+        width: 20px;
+        height: 35px;
+        position: absolute;
+        left: 15px;
+        border: none;
+        display: flex;
+        background: none;
+    }
+    
+    .carrousel--arrowLeft img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        filter: drop-shadow(0 0 0.8rem black);
+        transform: rotate(180deg);
+    }
+    
+    /* flêche de droite */
+    .carrousel--arrowRight{
+        width: 20px;
+        height: 35px;
+        position: absolute;
+        right: 15px;
+        border: none;
+        display: flex;
+        background: none;
+    }
+    
+    .carrousel--arrowRight img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        filter: drop-shadow(0 0 0.8rem black);
+    }
+    
+    /* l'indicateur du nombre de photos */
+    
+    .carrousel--NbPhoto{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        color: white;
+        font-size: 15px;
+        filter: drop-shadow(0 0 0.1rem black);
+    }
+}

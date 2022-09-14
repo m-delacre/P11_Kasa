@@ -8,11 +8,11 @@ function Rating(props){
     const range = [1,2,3,4,5]
 
     return(
-        <React.Fragment>
+        <div className="ratingGlobal">
             {range.map((rangeElement, index)=>
-                rating >= rangeElement ? <img src={Like} alt="rating star" key={`star--${index}`}/> : <img src={NoLike} alt="rating star" key={`star--${index}`}/>
+                rating >= rangeElement ? <img src={Like} alt="rating star" key={`star--${index}`} className="star"/> : <img src={NoLike} alt="rating star" key={`star--${index}`} className="star"/>
             )}
-        </React.Fragment>
+        </div>
     )
 }
 

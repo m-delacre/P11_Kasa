@@ -26,3 +26,32 @@
 .aboutGlobale--Depliants--items{
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width : 900px){
+    .aboutGlobale{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aboutGlobale--Banner{
+        display: flex;
+        width: auto;
+        height: auto;
+        height: fit-content;
+    }
+    
+    .aboutGlobale--Depliants{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: fit-content;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .aboutGlobale--Depliants--items{
+        margin-bottom: 15px;
+    }
+}

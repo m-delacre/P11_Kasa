@@ -1,20 +1,52 @@
 .tagList{
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 
-.tag p{
+.tag{
     width: fit-content;
     height: fit-content;
     background-color: #FF6060;
-    border-radius: 15px;
+    border-radius: 20px;
     color: white;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 17px;
+    margin: 0;
+}
+
+@media only screen and (max-width : 900px){
+    .tagList{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .tag{
+        width: fit-content;
+        height: fit-content;
+        background-color: #FF6060;
+        border-radius: 5px;
+        color: white;
+        padding: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 12px;
+        margin: 0;
+    }
 }

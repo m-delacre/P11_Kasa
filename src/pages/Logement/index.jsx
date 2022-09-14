@@ -24,27 +24,30 @@ function Logement() {
                     picture = {logement.pictures}
                     nombrePhotos = {logement.pictures.length}
                 />
-                <div className="logementInfo">
-                    <div className="logementInfo--left">
-                        <p className="logement--textBold">{logement.title}</p>
-                        <p>{logement.location}</p>
-                    </div>
-                    <div className="logementInfo--right">
-                        <div className="logementInfo--right--name">
-                            <p>{hostPre}</p>
-                            <p>{hostNom}</p>
+                <div className="logement">
+                    <div className="logement-Left">
+                        <div className="logement-left-text">
+                            <p className="logement--textBold">{logement.title}</p>
+                            <p>{logement.location}</p>
                         </div>
-                        <div className="logementInfo--right--img">
-                            <img src={logement.host.picture} alt={`profil pic`}/>
+                        
+                        <div className="logement-left-tag">
+                           <TagList tags={logement.tags}/> 
                         </div>
                     </div>
-                </div>
-                <div className="tagETrating">
-                    <div className="tag">
-                        <TagList tags={logement.tags}/>
-                    </div>
-                    <div className="rating">
-                        <Rating rate={logement.rating}/>
+                    <div className="logement-Right">
+                        <div className="logement-rightinfo">
+                            <div className="logement-right--name">
+                                <p>{hostPre}</p>
+                                <p>{hostNom}</p>
+                            </div>
+                            <div className="logement-right--img">
+                                <img src={logement.host.picture} alt={`profil pic`}/>
+                            </div>
+                        </div>
+                        <div className="rating">
+                            <Rating rate={logement.rating}/>
+                        </div>    
                     </div>
                 </div>
                 <div className="logement--Depliants">
@@ -57,7 +60,6 @@ function Logement() {
                     />
                 </div>
             </div>
-            
         </div>
     );
 }
