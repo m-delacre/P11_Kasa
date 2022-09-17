@@ -1,0 +1,10 @@
+.bannerPosition{
+    height: 200px;
+}
+
+@media only screen and (max-width : 900px){
+    .bannerPosition{
+        height: 100px;
+        margin-bottom: 20px;
+    }
+}

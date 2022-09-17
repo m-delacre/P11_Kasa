@@ -10,8 +10,8 @@
 .aboutGlobale--Banner{
     display: flex;
     width: auto;
-    height: auto;
-    height: fit-content;
+    height: 200px;
+    margin-bottom: 60px;
 }
 
 .aboutGlobale--Depliants{
@@ -38,8 +38,8 @@
     .aboutGlobale--Banner{
         display: flex;
         width: auto;
-        height: auto;
-        height: fit-content;
+        height: 180px;
+        margin-bottom: 25px;
     }
     
     .aboutGlobale--Depliants{

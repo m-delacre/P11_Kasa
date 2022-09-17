@@ -1,6 +1,6 @@
 .containerBanner{
     width: 100%;
-    height: 200px;
+    height: 100%;
     margin-bottom: 100px;
     margin-top: 30px;
 }
@@ -8,7 +8,6 @@
 .bannerContour{
     width: auto;
     height: 100%;
-    background-color: grey;
     margin-left: 200px;
     margin-right: 200px;
     border-radius: 20px;
@@ -42,8 +41,7 @@
 @media only screen and (max-width : 900px){
     .containerBanner{
         width: 100%;
-        height: 100px;
-        margin-bottom: 20px;
+        height: 100%;
         margin-top: 10px;
     }
     
