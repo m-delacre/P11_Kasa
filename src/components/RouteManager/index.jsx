@@ -19,6 +19,7 @@ function RouteManager(){
           <Route path="about" element={<About/>} />
           {/*Page erreur*/}
           <Route path="*" element={<Error/>} />
+          <Route path="404" element={<Error/>} />
           {/*Page logement avec params */}
           <Route path="logement/:indexLogement" element={<Logement/>}/>
         </Routes>

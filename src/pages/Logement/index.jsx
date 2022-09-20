@@ -1,17 +1,28 @@
 import React from "react";
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import data from "../../mockapi/data";
 import Depliant from "../../components/Depliant";
 import './logementStyle.css'
 import Rating from "../../components/Rating";
 import TagList from "../../components/TagList";
 import Carrousel from "../../components/Carrousel";
+import { useEffect } from 'react';
 
 function Logement() {
     const {indexLogement} = useParams();
-    const logementFilter = data.filter(logement => logement.id === indexLogement)
-    const logement = logementFilter[0];
-
+    const logement = data.find(logement => logement.id === indexLogement);
+    
+    let navigate = useNavigate();
+    useEffect(() => {
+        if (logement === undefined) {
+         navigate("404", { replace: true });
+        }
+    }, [indexLogement])
+      
+    if (logement === undefined) {
+        return null;
+    }
+    
     const fullName = logement.host.name;
     const splitName = fullName.split(' ');
     const hostPre =  splitName[0];
@@ -63,5 +74,4 @@ function Logement() {
         </div>
     );
 }
-
 export default Logement;
