@@ -17,13 +17,13 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 /* left titre localisation tags */
 
 .logement-Left{
-    width: 50%;
+    width: 70%;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@
 /* right nom prenom photo rating */
 
 .logement-Right{
-    width: 50%;
+    width: 30%;
     height: 150px;
     display: flex;
     justify-content: flex-end;
