@@ -76,10 +76,26 @@
 .logement-right--name{
     font-size: 20px;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.logement-right--name--Pre{
+    margin-bottom: -20px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.logement-right--name--Nom{
+    position: absolute;
+    right: 0;
+    top: 30px;
 }
 
 .logement-right--name p{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .logement-right--img{

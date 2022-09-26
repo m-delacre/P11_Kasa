@@ -49,8 +49,12 @@ function Logement() {
                     <div className="logement-Right">
                         <div className="logement-rightinfo">
                             <div className="logement-right--name">
-                                <p>{hostPre}</p>
-                                <p>{hostNom}</p>
+                                <div className="logement-right--name--Pre">
+                                    <p>{hostPre}</p>
+                                </div>
+                                <div className="logement-right--name--Nom">
+                                    <p>{hostNom}</p>
+                                </div>
                             </div>
                             <div className="logement-right--img">
                                 <img src={logement.host.picture} alt={`profil pic`}/>
